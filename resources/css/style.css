@@ -10,6 +10,11 @@ h1{
   font-weight: bold;
 }
 
+h4{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 /* Navigation logo header */
 
 .logo-nav{
@@ -109,6 +114,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 80%;
 }
 
 .opener .btn{
@@ -144,5 +150,89 @@ h1{
   .banner .opener .btn{
     width: 100%;
   }
+
+}
+
+/* Content and info */
+
+.content{
+  position: relative;
+  top: 64px;
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+
+}
+
+.content .main-article {
+  width: 60%;
+  height: auto;
+  margin: 0 24px;
+}
+
+.content .main-article img{
+  width: 100%;
+  height: auto;
+}
+
+.content .main-article h1{
+  margin: 32px 0 24px 0;
+}
+
+
+.content .information{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.content .info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.content .info img{
+  width: 35%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.content .info-txt{
+  width: 65%;
+}
+
+.content .info-txt p{
+  margin: 0.5rem 0;
+}
+
+
+/* IDEA: having trouble with browser content not dissapering properly.
+Need to figure out from here */
+@media only screen and (max-width: 600px) {
+  .content .browser{
+    display: none;
+  }
+  .content .main-article{
+    display: none;
+  }
+
+  .content .mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 1rem 2rem 1rem;
+  }
+
+  .content .mobile .info img{
+    width: 100%;
+    height: auto;
+
+  }
+
+
 
 }
