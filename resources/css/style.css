@@ -5,6 +5,11 @@ body{
   font-size: 16px;
 }
 
+h1{
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
 /* Navigation logo header */
 
 .logo-nav{
@@ -81,4 +86,63 @@ body{
 .banner{
   position: relative;
   top: 64px;
+  background-color: red;
+  width: 100%;
+}
+
+.banner .inside{
+  display: flex;
+  align-items: center;
+  width: 960px;
+  margin: auto;
+}
+
+.banner img{
+  display: block;
+  height: auto;
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.banner .opener {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.opener .btn{
+  width: 80%;
+  text-align: center;
+  padding: 8px;
+  background-color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner .inside{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .banner img{
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner .opener{
+    margin: 32px 16px;
+  }
+
+  .banner .opener p{
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .banner .opener .btn{
+    width: 100%;
+  }
+
 }
