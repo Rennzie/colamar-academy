@@ -415,3 +415,30 @@ h4{
     margin: 0;
   }
 }
+
+/* Footer Section */
+
+.footer{
+  position: relative;
+  top: 4rem;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  margin: auto;
+  width: 960px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer{
+    width: 100%;
+  }
+
+  footer nav{
+    display: none;
+  }
+
+}
