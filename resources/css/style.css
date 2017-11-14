@@ -18,9 +18,9 @@ h4{
 /* Navigation logo header */
 
 .logo-nav{
+  position: fixed;
   display: flex;
   align-items: center;
-  position: fixed;
   background-color: grey;
   width: 100%;
   height: 64px;
@@ -90,13 +90,14 @@ h4{
 
 .banner{
   position: relative;
-  top: 64px;
+  top: 4rem;
   background-color: red;
   width: 100%;
 }
 
 .banner .inside{
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 960px;
   margin: auto;
@@ -106,7 +107,7 @@ h4{
   display: block;
   height: auto;
   width: 60%;
-  margin: 32px 24px;
+  margin: 2rem 1.5rem;
 }
 
 .banner .opener {
@@ -139,12 +140,12 @@ h4{
   }
 
   .banner .opener{
-    margin: 32px 16px;
+    margin: 2rem 1rem;
   }
 
   .banner .opener p{
-    margin-top: 32px;
-    margin-bottom: 24px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .banner .opener .btn{
@@ -155,40 +156,43 @@ h4{
 
 /* Content and info */
 
-.content{
+.browser-content{
   position: relative;
-  top: 64px;
+  top: 4rem;
   width: 960px;
   display: flex;
   justify-content: center;
-  margin: 32px auto;
-
+  margin: 1rem auto;
 }
 
-.content .main-article {
+.mobile-content{
+  display: none;
+}
+
+.browser-content .main-article {
   width: 60%;
   height: auto;
-  margin: 0 24px;
+  margin: 0 1rem;
 }
 
-.content .main-article img{
+.browser-content .main-article img{
   width: 100%;
   height: auto;
 }
 
-.content .main-article h1{
+.browser-content .main-article h1{
   margin: 32px 0 24px 0;
 }
 
 
-.content .information{
+.browser-content .information{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
 }
 
-.content .info{
+.browser-content .info{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -196,43 +200,218 @@ h4{
   margin: 0 2rem;
 }
 
-.content .info img{
+.browser-content .info img{
   width: 35%;
   height: auto;
   margin-right: 1rem;
 }
 
-.content .info-txt{
+.browser-content .info-txt{
   width: 65%;
 }
 
-.content .info-txt p{
+.browser-content .info-txt p{
   margin: 0.5rem 0;
 }
 
 
-/* IDEA: having trouble with browser content not dissapering properly.
-Need to figure out from here */
 @media only screen and (max-width: 600px) {
-  .content .browser{
-    display: none;
-  }
-  .content .main-article{
+  .browser-content{
     display: none;
   }
 
-  .content .mobile{
+  .mobile-content{
+    position: relative;
+    top: 4rem;
     display: flex;
     flex-direction: column;
+    align-items: center;;
+    width: 100%;
     margin: 2.5rem 1rem 2rem 1rem;
   }
 
-  .content .mobile .info img{
-    width: 100%;
-    height: auto;
-
+  .mobile-content .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
   }
 
+  .mobile-content .info img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
 
+  .mobile-content .info-txt{
+    margin-left: 1rem;
+  }
 
+  .mobile-content .info p{
+    padding: 0.5rem 0;
+  }
+}
+
+/* Courses section */
+.learning{
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: auto;
+}
+
+.learning .header{
+  text-align: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.learning .course{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 25%;
+  margin: 2rem;
+  background-color: grey;
+}
+
+.learning .course img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.course h4{
+  margin-left: 1rem;
+}
+
+.course p{
+  margin: 0.5rem 0 0 1rem;
+}
+
+@media only screen and (max-width: 600px){
+  .learning .course img,
+  .learning .course p{
+    display: none;
+  }
+
+  .learning{
+    position: relative;
+    top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .learning .course{
+    display: block;
+    width: 100%;
+    margin: 0.5
+  }
+
+  .learning .course h4{
+    width: 100%;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+}
+
+/* thesis display section here */
+.exhibits{
+  position: relative;
+  top: 4rem;
+  background-color: grey;
+  padding-top: 2rem;
+}
+
+.exhibits .header{
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.thesese{
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  width: 960px;
+}
+
+.thesese .main-thesis{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin: 1.5rem;
+}
+
+.main-thesis video{
+  width: 100%;
+  height: auto;
+
+}
+
+.main-thesis h4{
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.main-thesis p{
+  margin-bottom: 2rem;
+}
+
+.secondary-thesese{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondary-thesese .thesis{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.thesis img{
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 1rem;
+}
+
+.thesis .thesis-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65%;
+}
+
+.thesis .thesis-txt p{
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-thesis h4,
+  .main-thesis p,
+  .secondary-thesese{
+    display: none;
+  }
+
+  .thesese{
+    width: 100%;
+  }
+
+  .thesese .main-thesis{
+    width: 100%;
+    margin: 0;
+  }
 }
