@@ -6,13 +6,13 @@ body{
 }
 
 h1{
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
   font-size: 2.25rem;
   font-weight: bold;
 }
 
 h4{
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -145,7 +145,7 @@ header nav a:hover{
 }
 
 .banner .opener p{
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New", serif;
   line-height: 1.4;
 }
 
@@ -225,13 +225,13 @@ header nav a:hover{
 }
 
 .browser main p{
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New", serif;
   margin: 0 1rem 1rem 1rem;
   line-height: 1.4;
 }
 
 .browser main em{
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New", serif;
   font-style: italic;
 }
 
@@ -275,6 +275,10 @@ header nav a:hover{
 .browser .info-txt a{
   color: rgba( 18,138,255,1);
   text-decoration-line: underline;
+}
+
+.browser .info-txt a:visited{
+  color: rgb( 67,  0,144);
 }
 
 @media only screen and (max-width: 600px) {
@@ -336,7 +340,7 @@ header nav a:hover{
 .learning .header{
   text-align: center;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .learning .course{
@@ -345,7 +349,7 @@ header nav a:hover{
   justify-content: flex-start;
   align-items: flex-start;
   width: 25%;
-  height: 250px;
+  height: 15.6rem;
   margin: 2rem 1rem;
   background-color: rgba(166,211,255,1);
 }
@@ -408,7 +412,7 @@ header nav a:hover{
 .exhibits{
   position: relative;
   top: 4rem;
-  background-color:rgba(136,129,255,1); /*;*/
+  background-color:rgba(136,129,255,1);
   padding-top: 2rem;
 }
 
@@ -444,7 +448,7 @@ header nav a:hover{
 }
 
 .main-thesis p{
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Times New", serif;
   margin-bottom: 2rem;
   line-height: 1.4;
 }
@@ -534,6 +538,7 @@ footer span{
 @media only screen and (max-width: 600px) {
   footer{
     width: auto;
+    font-size: 0.75rem;
   }
 
   footer nav{
