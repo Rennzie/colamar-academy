@@ -1,0 +1,5 @@
+Logging changes made to image assets
+
+1) banner.jpg		resized to 600px wide		reduced size from c.160kb to 78kb
+
+2) information-main.jpg	resized to 600px wide		reduced size from .140kb to 34kb
